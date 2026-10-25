@@ -1,0 +1,18 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "whenitruns"
+version = "0.1.0"
+description = "Explain every scheduled job on your machine in English: crontabs, cron.d, systemd timers, and job JSON. Next runs and collision detection. Stdlib only."
+requires-python = ">=3.9"
+license = { text = "MIT" }
+authors = [{ name = "Kiwi172" }]
+readme = "README.md"
+
+[project.scripts]
+whenitruns = "whenitruns:main"
+
+[tool.setuptools]
+py-modules = ["whenitruns"]
